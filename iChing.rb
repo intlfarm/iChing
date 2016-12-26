@@ -1,8 +1,6 @@
 def i_ching
   yin_yang_array = ["_ _", "___", "_ _", "___", "_ _", "___"]
   yin_yang_sample = yin_yang_array.shuffle
-  yin_line = yin_yang_array[0]
-  yang_line = yin_yang_array[1]
 
   puts "The I Ching is an ancient source of knowledge...\nProceed to understand the infinite source of wisdom...\nType 'Qi' to receive a yin or yang line hexagram..."
 
