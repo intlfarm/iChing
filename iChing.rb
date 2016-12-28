@@ -310,7 +310,7 @@ class I_ching
   user_one.trigram
   user_one.hexagram
   user_one.hexagram_explained
-  puts "Hexagram names sourced from James Legge I Ching Hexagram Translation (http://www.ichingfortune.com/legge_hexagrams.php)"
+  puts "\nHexagram names sourced from James Legge I Ching Hexagram Translation (http://www.ichingfortune.com/legge_hexagrams.php)"
 
 end
 
