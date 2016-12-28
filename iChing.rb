@@ -4,23 +4,23 @@ class I_ching
     yin_yang_sample = yin_yang_array.shuffle
     @@user_hexagram = yin_yang_sample
 
-    @@lower_sky       = @@user_hexagram[5] == "______" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "______"
-    @@lower_lake      = @@user_hexagram[5] == "______" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "__  __"
-    @@lower_fire      = @@user_hexagram[5] == "______" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "______"
-    @@lower_thunder   = @@user_hexagram[5] == "______" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "__  __"
-    @@lower_wind      = @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "______"
-    @@lower_water     = @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "__  __"
-    @@lower_mountain  = @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "______"
-    @@lower_earth     = @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "__  __"
+    @@lower_sky       =   @@user_hexagram[5] == "______" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "______"
+    @@lower_lake      =   @@user_hexagram[5] == "______" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "__  __"
+    @@lower_fire      =   @@user_hexagram[5] == "______" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "______"
+    @@lower_thunder   =   @@user_hexagram[5] == "______" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "__  __"
+    @@lower_wind      =   @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "______"
+    @@lower_water     =   @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "______" && @@user_hexagram[3] == "__  __"
+    @@lower_mountain  =   @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "______"
+    @@lower_earth     =   @@user_hexagram[5] == "__  __" && @@user_hexagram[4] == "__  __" && @@user_hexagram[3] == "__  __"
 
-    @@top_sky         = @@user_hexagram[2] == "______" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "______"
-    @@top_lake        = @@user_hexagram[2] == "______" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "__  __"
-    @@top_fire        = @@user_hexagram[2] == "______" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "______"
-    @@top_thunder     = @@user_hexagram[2] == "______" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "__  __"
-    @@top_wind        = @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "______"
-    @@top_water       = @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "__  __"
-    @@top_mountain    = @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "______"
-    @@top_earth       = @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "__  __"
+    @@top_sky         =   @@user_hexagram[2] == "______" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "______"
+    @@top_lake        =   @@user_hexagram[2] == "______" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "__  __"
+    @@top_fire        =   @@user_hexagram[2] == "______" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "______"
+    @@top_thunder     =   @@user_hexagram[2] == "______" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "__  __"
+    @@top_wind        =   @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "______"
+    @@top_water       =   @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "______" && @@user_hexagram[0] == "__  __"
+    @@top_mountain    =   @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "______"
+    @@top_earth       =   @@user_hexagram[2] == "__  __" && @@user_hexagram[1] == "__  __" && @@user_hexagram[0] == "__  __"
 
     puts "The I Ching is an ancient source of knowledge...\nProceed to understand the infinite source of wisdom...\nType 'Qi' to receive a yin or yang line hexagram..."
 
@@ -103,70 +103,70 @@ class I_ching
     puts @@user_hexagram[4]
     puts @@user_hexagram[5]
 
-    @@hexagram_one_creative = @@lower_sky && @@top_sky
-    @@hexagram_two_receptive = @@lower_earth && @@top_earth
-    @@hexagram_three_difficulty = @@lower_thunder && @@top_fire
-    @@hexagram_four_youthful_folly = @@lower_water && @@top_mountain
-    @@hexagram_five_waiting = @@lower_sky && @@top_water
-    @@hexagram_six_conflict = @@lower_water && @@top_sky
-    @@hexagram_seven_army = @@lower_water && @@top_earth
-    @@hexagram_eight_holding_together = @@lower_earth && @@top_water
-    @@hexagram_nine_power_of_the_small = @@lower_sky && @@top_wind
-    @@hexagram_ten_treading = @@lower_lake && @@top_sky
-    @@hexagram_eleven_peace = @@lower_sky && @@top_earth
-    @@hexagram_twelve_stagnation = @@lower_earth && @@top_sky
-    @@hexagram_thirteen_fellowship_with_men = @@lower_fire && @@top_sky
-    @@hexagram_fourteen_possession = @@lower_sky && @@top_fire
-    @@hexagram_fifteen_modesty = @@lower_mountain && @@top_earth
-    @@hexagram_sixteen_enthusiasm = @@lower_earth && @@top_thunder
-    @@hexagram_seventeen_following = @@lower_thunder && @@top_lake
-    @@hexagram_eighteen_decay = @@lower_wind && @@top_mountain
-    @@hexagram_nineteen_approach = @@lower_lake && @@top_earth
-    @@hexagram_twenty_contemplation = @@lower_earth && @@top_wind
-    @@hexagram_twenty_one_biting_through = @@lower_thunder && @@top_fire
-    @@hexagram_twenty_two_grace = @@lower_fire && @@top_mountain
-    @@hexagram_twenty_three_splitting_apart = @@lower_earth && @@top_mountain
-    @@hexagram_twenty_four_return = @@lower_thunder && @@top_earth
-    @@hexagram_twenty_five_innocence = @@lower_thunder && @@top_sky
-    @@hexagram_twenty_six_power_of_the_great = @@lower_sky && @@top_mountain
-    @@hexagram_twenty_seven_providing_nourishment = @@lower_thunder && @@top_mountain
-    @@hexagram_twenty_eight_preponderance_of_great = @@lower_wind && @@top_lake
-    @@hexagram_twenty_nine_abysmal = @@lower_water && @@top_water
-    @@hexagram_thirty_clinging = @@lower_fire && @@top_fire
-    @@hexagram_thirty_one_influence = @@lower_mountain && @@top_lake
-    @@hexagram_thirty_two_duration = @@lower_wind && @@top_thunder
-    @@hexagram_thirty_three_retreat = @@lower_mountain && @@top_sky
-    @@hexagram_thirty_four_power_of_great = @@lower_sky && @@top_thunder
-    @@hexagram_thirty_five_progress = @@lower_earth && @@top_fire
-    @@hexagram_thirty_six_darkening_of_light = @@lower_fire && @@top_earth
-    @@hexagram_thirty_seven_the_clan = @@lower_fire && @@top_wind
-    @@hexagram_thirty_eight_opposition = @@lower_lake && @@top_fire
-    @@hexagram_thirty_nine_obstruction = @@lower_mountain && @@top_water
-    @@hexagram_forty_deliverance = @@lower_water && @@top_thunder
-    @@hexagram_forty_one_decrease = @@lower_lake && @@top_mountain
-    @@hexagram_forty_two_increase = @@lower_thunder && @@top_wind
-    @@hexagram_forty_three_break_through = @@lower_sky && @@top_lake
-    @@hexagram_forty_four_coming_to_meet = @@lower_wind && @@top_sky
-    @@hexagram_forty_five_gathering_together = @@lower_earth && @@top_lake
-    @@hexagram_forty_six_pushing_upward = @@lower_wind && @@top_earth
-    @@hexagram_forty_seven_oppression = @@lower_water && @@top_lake
-    @@hexagram_forty_eight_the_well = @@lower_wind && @@top_water
-    @@hexagram_forty_nine_revolution = @@lower_fire && @@top_lake
-    @@hexagram_fifty_the_cauldron = @@lower_wind && @@top_fire
-    @@hexagram_fifty_one_the_arousing = @@lower_thunder && @@top_thunder
-    @@hexagram_fifty_two_keeping_still_mountain = @@lower_mountain && @@top_mountain
-    @@hexagram_fifty_three_development = @@lower_mountain && @@top_wind
-    @@hexagram_fifty_four_the_marrying_maiden = @@lower_lake && @@top_thunder
-    @@hexagram_fifty_five_abundance = @@lower_fire && @@top_thunder
-    @@hexagram_fifty_six_the_wanderer = @@lower_mountain && @@top_fire
-    @@hexagram_fifty_seven_the_penetrating_wind = @@lower_wind && @@top_wind
-    @@hexagram_fifty_eight_the_joyous_lake = @@lower_lake && @@top_lake
-    @@hexagram_fifty_nine_dispersion = @@lower_fire && @@top_wind
-    @@hexagram_sixty_limitation = @@lower_lake && @@top_water
-    @@hexagram_sixty_one_inner_truth = @@lower_lake && @@top_wind
-    @@hexagram_sixty_two_preponderance_of_the_small = @@lower_mountain && @@top_thunder
-    @@hexagram_sixty_three_after_completion = @@lower_fire && @@top_water
-    @@hexagram_sixty_four_before_completion = @@lower_water && @@top_fire
+    @@hexagram_one_creative =                         @@lower_sky && @@top_sky
+    @@hexagram_two_receptive =                        @@lower_earth && @@top_earth
+    @@hexagram_three_difficulty =                     @@lower_thunder && @@top_fire
+    @@hexagram_four_youthful_folly =                  @@lower_water && @@top_mountain
+    @@hexagram_five_waiting =                         @@lower_sky && @@top_water
+    @@hexagram_six_conflict =                         @@lower_water && @@top_sky
+    @@hexagram_seven_army =                           @@lower_water && @@top_earth
+    @@hexagram_eight_holding_together =               @@lower_earth && @@top_water
+    @@hexagram_nine_power_of_the_small =              @@lower_sky && @@top_wind
+    @@hexagram_ten_treading =                         @@lower_lake && @@top_sky
+    @@hexagram_eleven_peace =                         @@lower_sky && @@top_earth
+    @@hexagram_twelve_stagnation =                    @@lower_earth && @@top_sky
+    @@hexagram_thirteen_fellowship_with_men =         @@lower_fire && @@top_sky
+    @@hexagram_fourteen_possession =                  @@lower_sky && @@top_fire
+    @@hexagram_fifteen_modesty =                      @@lower_mountain && @@top_earth
+    @@hexagram_sixteen_enthusiasm =                   @@lower_earth && @@top_thunder
+    @@hexagram_seventeen_following =                  @@lower_thunder && @@top_lake
+    @@hexagram_eighteen_decay =                       @@lower_wind && @@top_mountain
+    @@hexagram_nineteen_approach =                    @@lower_lake && @@top_earth
+    @@hexagram_twenty_contemplation =                 @@lower_earth && @@top_wind
+    @@hexagram_twenty_one_biting_through =            @@lower_thunder && @@top_fire
+    @@hexagram_twenty_two_grace =                     @@lower_fire && @@top_mountain
+    @@hexagram_twenty_three_splitting_apart =         @@lower_earth && @@top_mountain
+    @@hexagram_twenty_four_return =                   @@lower_thunder && @@top_earth
+    @@hexagram_twenty_five_innocence =                @@lower_thunder && @@top_sky
+    @@hexagram_twenty_six_power_of_the_great =        @@lower_sky && @@top_mountain
+    @@hexagram_twenty_seven_providing_nourishment =   @@lower_thunder && @@top_mountain
+    @@hexagram_twenty_eight_preponderance_of_great =  @@lower_wind && @@top_lake
+    @@hexagram_twenty_nine_abysmal =                  @@lower_water && @@top_water
+    @@hexagram_thirty_clinging =                      @@lower_fire && @@top_fire
+    @@hexagram_thirty_one_influence =                 @@lower_mountain && @@top_lake
+    @@hexagram_thirty_two_duration =                  @@lower_wind && @@top_thunder
+    @@hexagram_thirty_three_retreat =                 @@lower_mountain && @@top_sky
+    @@hexagram_thirty_four_power_of_great =           @@lower_sky && @@top_thunder
+    @@hexagram_thirty_five_progress =                 @@lower_earth && @@top_fire
+    @@hexagram_thirty_six_darkening_of_light =        @@lower_fire && @@top_earth
+    @@hexagram_thirty_seven_the_clan =                @@lower_fire && @@top_wind
+    @@hexagram_thirty_eight_opposition =              @@lower_lake && @@top_fire
+    @@hexagram_thirty_nine_obstruction =              @@lower_mountain && @@top_water
+    @@hexagram_forty_deliverance =                    @@lower_water && @@top_thunder
+    @@hexagram_forty_one_decrease =                   @@lower_lake && @@top_mountain
+    @@hexagram_forty_two_increase =                   @@lower_thunder && @@top_wind
+    @@hexagram_forty_three_break_through =            @@lower_sky && @@top_lake
+    @@hexagram_forty_four_coming_to_meet =            @@lower_wind && @@top_sky
+    @@hexagram_forty_five_gathering_together =        @@lower_earth && @@top_lake
+    @@hexagram_forty_six_pushing_upward =             @@lower_wind && @@top_earth
+    @@hexagram_forty_seven_oppression =               @@lower_water && @@top_lake
+    @@hexagram_forty_eight_the_well =                 @@lower_wind && @@top_water
+    @@hexagram_forty_nine_revolution =                @@lower_fire && @@top_lake
+    @@hexagram_fifty_the_cauldron =                   @@lower_wind && @@top_fire
+    @@hexagram_fifty_one_the_arousing =               @@lower_thunder && @@top_thunder
+    @@hexagram_fifty_two_keeping_still_mountain =     @@lower_mountain && @@top_mountain
+    @@hexagram_fifty_three_development =              @@lower_mountain && @@top_wind
+    @@hexagram_fifty_four_the_marrying_maiden =       @@lower_lake && @@top_thunder
+    @@hexagram_fifty_five_abundance =                 @@lower_fire && @@top_thunder
+    @@hexagram_fifty_six_the_wanderer =               @@lower_mountain && @@top_fire
+    @@hexagram_fifty_seven_the_penetrating_wind =     @@lower_wind && @@top_wind
+    @@hexagram_fifty_eight_the_joyous_lake =          @@lower_lake && @@top_lake
+    @@hexagram_fifty_nine_dispersion =                @@lower_fire && @@top_wind
+    @@hexagram_sixty_limitation =                     @@lower_lake && @@top_water
+    @@hexagram_sixty_one_inner_truth =                @@lower_lake && @@top_wind
+    @@hexagram_sixty_two_preponderance_of_small =     @@lower_mountain && @@top_thunder
+    @@hexagram_sixty_three_after_completion =         @@lower_fire && @@top_water
+    @@hexagram_sixty_four_before_completion =         @@lower_water && @@top_fire
 
   end
 
@@ -174,7 +174,7 @@ class I_ching
   def hexagram_explained
 
     puts ""
-    if @@hexagram_one_creative
+    if    @@hexagram_one_creative
       puts "Your hexagram is one: The Creative..."
     elsif @@hexagram_two_receptive
       puts "Your hexagram is two: The Receptive..."
@@ -296,7 +296,7 @@ class I_ching
       puts "Your hexagram is sixty: Limitation..."
     elsif @@hexagram_sixty_one_inner_truth
       puts "Your hexagram is sixty one: Inner Truth..."
-    elsif @@hexagram_sixty_two_preponderance_of_the_small
+    elsif @@hexagram_sixty_two_preponderance_of_small
       puts "Your hexagram is sixty two: Preponderance of the Small..."
     elsif @@hexagram_sixty_three_after_completion
       puts "Your hexagram is sixty three: After Completion..."
@@ -310,8 +310,7 @@ class I_ching
   user_one.trigram
   user_one.hexagram
   user_one.hexagram_explained
+
   puts "\nHexagram names sourced from James Legge I Ching Hexagram Translation (http://www.ichingfortune.com/legge_hexagrams.php)"
 
 end
-
-
